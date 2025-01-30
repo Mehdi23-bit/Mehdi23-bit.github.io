@@ -48,11 +48,15 @@ a{
     font-size: 20px;
     padding-left: 20px;
     transition: transform 0.3s ease;
-}
+  }
+  
 .logo a:hover{
     color: #caff33;
     transform: translateY(-3px); /* Move the div up */
    
+} 
+.logo a{
+    border: solid 2px white;
 }
 
 header{
@@ -123,4 +127,112 @@ section{
     flex-wrap: wrap;
 
   }
+#Education{
+   
+    width: 100%;
+     
+}
 
+
+
+/* Add these styles to your CSS */
+.timeline-container {
+    padding: 50px 0;
+    width: 100%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #caff33;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    display: block;
+     width: 50%;
+    clear: both;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #1f242d;
+    border: 3px solid red;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-item.left {
+   margin-left: 0;
+}
+
+/* .timeline-item.left::after {
+    right: -10px;
+} */
+
+.timeline-item.right {
+  margin-right: 0;
+}
+
+.timeline-item.right::after {
+    left: -10px;
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-year {
+    color: #caff33;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* @media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        float: none;
+        left: 0;
+    }
+
+    .timeline-item.left::after,
+    .timeline-item.right::after {
+        left: 15px;
+    }
+} */
