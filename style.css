@@ -8,7 +8,11 @@ body{
    background: #1f242d;
    color: white;
    overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0;
 }
+
 a{
     color: white;
     text-decoration: none;
@@ -89,11 +93,7 @@ backdrop-filter: blur(10px);
 display: inline;
 margin-left: 20px;
 }   
-/* #media  ul li a img{
-    width: 20px;
-    height: 20px;
-    color: #caff33;
-}    */
+
 .bx {
     font-size: 30px;   
     color: #caff33;       
@@ -120,13 +120,15 @@ transition: color 0.4s ease-in-out;
 section{
     display: flex;
     justify-content: space-between;
-    scroll-margin-top: 80px; 
-    scroll-margin-left: 100px;
+    scroll-margin-top: 0; 
+    scroll-margin-left: 0;
     width: 100%;
     gap: 200px; 
     flex-wrap: wrap;
+    margin-top: 0;
 
   }
+  
 #Education{
    
     width: 100%;
