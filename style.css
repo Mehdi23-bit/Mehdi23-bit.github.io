@@ -1,0 +1,84 @@
+body{
+   background: #1f242d;
+   color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+   
+}
+.navbar{
+    position: fixed;
+    right:0;
+    top:0;
+    margin-right: 30px; 
+}
+.navbar ul li{
+    display: inline-block;
+    margin-right: 50px;
+
+}
+
+.navbar ul li a{
+    display: block;
+    font-size: 20px;
+    font-weight: bold; /* normal, bold, lighter, or specific values (100-900) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+.navbar ul li a:hover{
+        color: #caff33;
+        transform: translateY(-5px); /* Move the div up */
+       
+}
+#icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    position: fixed;
+}
+header{
+   
+    display: flex;
+    justify-content: space-between; /* Align divs horizontally */
+   }
+.home{
+    margin-left:100px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: flex-start; /* Optional: for alignment */
+   
+}
+.home p{  
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 500px;
+      } 
+#media  ul li{
+display: inline;
+margin-left: 20px;
+}   
+/* #media  ul li a img{
+    width: 20px;
+    height: 20px;
+    color: #caff33;
+}    */
+.bx {
+    font-size: 30px;   
+    color: #caff33;       
+}
+.mypicture{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 150px;
+    top:150px;
+    border-radius: 50%; /* Makes it round */
+    border: 5px solid #caff33; 
+}
+#cursur:hover{
+color: #caff33;
+}
+
+
+
