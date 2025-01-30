@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
    background: #1f242d;
    color: white;
@@ -82,12 +85,20 @@ margin-left: 20px;
     top:150px;
     border-radius: 50%; /* Makes it round */
     border: 5px solid #caff33; 
+    transition: box-shadow 0.4s ease-in-out;
+}
+.mypicture:hover{
+box-shadow: 0 0 15px #caff33;
+ 
+
 }
 #cursur:hover{
 color: #caff33;
 }
 
 #cursur{
-font-size: 40px;    
+font-size: 40px; 
+margin-top: 0px; 
+transition: color 0.4s ease-in-out;  
 }
 
