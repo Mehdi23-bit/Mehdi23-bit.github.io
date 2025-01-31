@@ -8,16 +8,16 @@ body{
    background: #1f242d;
    color: white;
    overflow-x: hidden;
-   display: flex;
-   flex-direction: column;
-   gap: 0;
+    display: block;
+   /*flex-direction: column;
+   justify-content: space-around;
+   gap: 0; */
 }
 
 a{
     color: white;
     text-decoration: none;
-   
-}
+   }
 .navbar{
     position: fixed;
     right:0;
@@ -118,14 +118,15 @@ margin-top: 0px;
 transition: color 0.4s ease-in-out;  
 }
 section{
-    display: flex;
+    display: block;
     justify-content: space-between;
-    scroll-margin-top: 0; 
-    scroll-margin-left: 0;
+    scroll-margin-top: 900px; 
+    scroll-margin-left: 900px;
+    margin-top: 0;
     width: 100%;
     gap: 200px; 
     flex-wrap: wrap;
-    margin-top: 0;
+    
 
   }
   
